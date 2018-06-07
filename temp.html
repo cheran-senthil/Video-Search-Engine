@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Video</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style>
+    .searchResult {
+      background-color: #eee;
+      color: inherit;
+      border: none;
+      padding: 10px 10px;
+    }
+
+    .searchResult:hover {
+      background-color: #bbb;
+    }
+
+    .history button {
+      width: 100%;
+    }
+
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <div class="jumbotron text-center">
+    <h1>History</h1>
+    </form>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12" id="SRP">
+        <form action="/video/" method="post">
+          <div class="btn-group-vertical form-group history" style="box-shadow: 0 0 20px #d8d8d8;margin-right: 5%;max-height: 1000px;overflow-y: scroll;">
+            
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

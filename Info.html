@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Video</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style>
+    .searchResult {
+      background-color: #eee;
+      color: inherit;
+      border: none;
+      padding: 10px 10px;
+    }
+
+    .searchResult:hover {
+      background-color: #bbb;
+    }
+
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <div class="jumbotron text-center">
+    <h1>Video</h1>
+    <form class="form-inline" method="post" action="/search/">
+      <input type="text" name="search" class="form-control" placeholder="Search" size="30%">
+      <button name="test" type="submit" class="btn" style="background-color: #eeeeee;"><span class="glyphicon glyphicon-search"></span></button>
+    </form>
+    <form method="post" action="/history">
+      <br>
+      <button name="test" type="submit" class="btn">View History</span></button>
+    </form>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="embed-responsive embed-responsive-16by9" style="box-shadow: 0 0 20px #d8d8d8;">
+          <iframe class="embed-responsive-item" name="CVP" src="https://www.youtube.com/embed/$id"></iframe>
+        </div>
+        <h2>$title</h2>
+        <h3>$views Views</h3>
+        <p>$likes<i class="glyphicon glyphicon-thumbs-up"></i> $dislikes<i class="glyphicon glyphicon-thumbs-down"></i> $favorites<i class="glyphicon glyphicon-star"></i></p>
+        <p><br><b>Channel Name: </b>$channel</p>
+        <p><b>Tags: </b>$tags</p>
+        <p><b>Published on: </b>$published</p>
+        <h4><b>Description</b></h4>
+        <p>$description</p>
+      </div>
+      <div class="col-sm-4" id="SRP">
+        <form action="/video/" method="post">
+          <div class="btn-group-vertical form-group" style="box-shadow: 0 0 20px #d8d8d8;margin-right: 5%;max-height: 1000px;overflow-y: scroll;">
+            $recommendation
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
