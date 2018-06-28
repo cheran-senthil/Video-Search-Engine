@@ -42,7 +42,6 @@ for json_file_name in json_file_names:
 
 # Creates all relationships
 for node1 in nodes:
-    print 1
     node1_Id = node1["Id"]
     node1_thumbnail = node1["thumbnail"]
     node1_channelTitle = node1["channelTitle"]
