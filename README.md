@@ -3,6 +3,6 @@ Web application for searching and viewing videos with recommendations.
 
 ## Update
 
-This repository will be archived soon.
+This repository is archived.
 
-A similar video search engine with improved functionality is currently under construction.
+A similar video search engine with improved functionality is available at https://github.com/Cheran-Senthil/eTube.
